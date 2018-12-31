@@ -73,14 +73,14 @@ def show_program():
                     %sINFORMATION%s
  ------------------------------------------------------
 
-    Author     Debby Anggraini 'CiKu370'
+    Author     Amjad Mahmoud
     Name       OSIF 'Open Source Information Facebook'
     CodeName   D3b2y
     version    full version
     Date       16/05/2018 09:35:12
-    Team       Blackhole Security
-    Email      xnver404@gmail.com
-    Telegram   @CiKu370
+    Team       Mega Security
+    Email      Amjadmahmoud911@gmail.com
+    Telegram   @Amjadmahmoud
 
 * if you find any errors or problems , please contact
   author
@@ -91,16 +91,16 @@ def info_ga():
      %sCOMMAND                      DESCRIPTION%s
   -------------       -------------------------------------
 
-   get_data           fetching all friends data
-   get_info           show information about your friend
+   data           fetching all friends data
+   info           show information about your friend
 
-   dump_id            fetching all id from friend list
-   dump_phone         fetching all phone number from friend list
-   dump_mail          fetching all emails from friend list
+   id            fetching all id from friend list
+   phone         fetching all phone number from friend list
+   mail          fetching all emails from friend list
    dump_<id>_id       fetching all id from your friends <spesific>
 		      ex: dump_username_id
 
-   token              Generate access token
+   log in              Generate access token
    cat_token          show your access token
    rm_token           remove access token
 
@@ -158,7 +158,7 @@ def get(data):
 
 		b.write(a['access_token'])
 		b.close()
-		print '[*] successfully generate access token'
+		print '[*] successfully generate access token (Hello My Name Is Amjad)'
 		print '[*] Your access token is stored in cookie/token.log'
 		exit()
 	except KeyError:
@@ -762,7 +762,7 @@ def dump_id():
 		print '[!] Stopped'
 		main()
 
-def dump_phone():
+def phone():
 	print '[*] load access token'
 
 	try:
@@ -812,7 +812,7 @@ def dump_phone():
 		print '[!] Stopped'
 		main()
 
-def dump_mail():
+def mail():
 	print '[*] load access token'
 
 	try:
@@ -995,11 +995,11 @@ def main():
 	elif cek.lower() == 'help':
 		info_ga()
 		main()
-	elif cek.lower() == 'dump_id':
+	elif cek.lower() == 'id':
 		dump_id()
-	elif cek.lower() == 'dump_phone':
+	elif cek.lower() == 'phone':
 		dump_phone()
-	elif cek.lower() == 'dump_mail':
+	elif cek.lower() == 'mail':
 		dump_mail()
 
 	if 'dump_' in cek.lower() and cek.lower().split('_')[2] == 'id':
