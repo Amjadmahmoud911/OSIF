@@ -57,12 +57,9 @@ def baliho():
 		print ' '
 
 	except (KeyError,IOError):
-		print R + '_     _'.center(44)
-		print "o' \.=./ `o".center(44)
-		print '(o o)'.center(44)
-		print 'ooO--(_)--Ooo'.center(44)
+		print 'Amjad'.center(44)
 		print ' ' + W
-		print ('O S I F').center(44)
+		print ('M E G A').center(44)
 		print (W + '     [' + G +'Open Source Information Facebook'+ W + ']')
 		print ' '
 ####################################################################
