@@ -85,16 +85,16 @@ def info_ga():
      %sCOMMAND                      DESCRIPTION%s
   -------------       -------------------------------------
 
-   data           fetching all friends data
-   info           show information about your friend
+   dump_data           fetching all friends data
+   dump_info           show information about your friend
 
-   id            fetching all id from friend list
-   phone         fetching all phone number from friend list
-   mail          fetching all emails from friend list
+   dump_id            fetching all id from friend list
+   dump_phone         fetching all phone number from friend list
+   dump_mail          fetching all emails from friend list
    dump_<id>_id       fetching all id from your friends <spesific>
 		      ex: dump_username_id
 
-   log in              Generate access token
+   token              Generate access token
    cat_token          show your access token
    rm_token           remove access token
 
@@ -756,7 +756,7 @@ def dump_id():
 		print '[!] Stopped'
 		main()
 
-def phone():
+def dump_phone():
 	print '[*] load access token'
 
 	try:
@@ -806,7 +806,7 @@ def phone():
 		print '[!] Stopped'
 		main()
 
-def mail():
+def dump_mail():
 	print '[*] load access token'
 
 	try:
@@ -989,11 +989,11 @@ def main():
 	elif cek.lower() == 'help':
 		info_ga()
 		main()
-	elif cek.lower() == 'id':
+	elif cek.lower() == 'dump_id':
 		dump_id()
-	elif cek.lower() == 'phone':
+	elif cek.lower() == 'dump_dump_phone':
 		dump_phone()
-	elif cek.lower() == 'mail':
+	elif cek.lower() == 'dump_mail':
 		dump_mail()
 
 	if 'dump_' in cek.lower() and cek.lower().split('_')[2] == 'id':
