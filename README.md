@@ -1,5 +1,4 @@
 
-# this project will be stopped for some time to come.
 
 ```
                                           _     _
