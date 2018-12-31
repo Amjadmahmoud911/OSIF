@@ -48,14 +48,11 @@ def baliho():
 		name = a['name']
 		n.append(a['name'])
 
-		print R + '_     _'.center(44)
-		print "o' \.=./ `o".center(44)
-		print '(o o)'.center(44)
-		print 'ooO--(_)--Ooo'.center(44)
-		print ' ' + W
-		print ('[*] ' + name + ' [*]').center(44)
-		print ' '
+		print R + 'Amjad'.center(44)
+		print "( M E G A )".center(44)
 
+		
+		
 	except (KeyError,IOError):
 		print 'Amjad'.center(44)
 		print ' ' + W
